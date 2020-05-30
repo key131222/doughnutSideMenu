@@ -15,7 +15,5 @@ class SideMenuVC: UITableViewController {
         case 2: NotificationCenter.default.post(name: NSNotification.Name("Logout"), object: nil)
         default: break
         }
-        
     }
-    
 }

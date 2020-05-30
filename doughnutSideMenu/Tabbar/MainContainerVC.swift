@@ -25,19 +25,17 @@ class MainContainerVC: UIViewController {
                                                name: NSNotification.Name("Logout"),
                                                object: nil)
     }
+    
+    
     @objc func Profile() {
         performSegue(withIdentifier: "Profile", sender: nil)
-        
-    }
-    
-    @objc func Settings() {
+            }
+        @objc func Settings() {
         performSegue(withIdentifier: "Settings", sender: nil)
     }
+
     
-    
-    
-    
-    //Back to Login
+    //Back To Login Page
     @objc func Logout() {
         let changePage
             = self.storyboard?.instantiateViewController(withIdentifier: "LogoutVC") as! LogoutVC
@@ -59,6 +57,7 @@ class MainContainerVC: UIViewController {
             self.view.layoutIfNeeded()
         }
     }
+    
     
     //Touch SideMenu
     @IBAction func onMoreTapped() {

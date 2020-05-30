@@ -8,7 +8,7 @@ class MainPageVC_1: UIViewController {
         super.viewDidLoad()
     }
     
-    //tabbar Change
+    //Tabbar Swipe
     @IBAction func swipeToLeft(_ sender: UISwipeGestureRecognizer) {
         self.tabBarController?.selectedIndex = 1
     }
